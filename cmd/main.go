@@ -30,17 +30,17 @@ func fizz() {
 //the modulo and for loops made sense
 
 func palin() {
-	string := "racecar"
+	string := "racecar"  //calling the string
 
-	palindrome(string)
+	palindrome(string) //palindrome function
 
-	fmt.Printf("'%s' is a palindrome\n", string)
+	fmt.Printf("'%s' is a palindrome\n", string) //line will be printed if racecar is palindrome
 }
 
-func palindrome(str string) bool {
+func palindrome(str string) bool {  
 	lastIdx := len(str) - 1
 
-	for i := 0; i < lastIdx/2 && i < (lastIdx-i); i++ {
+	for i := 0; i < lastIdx/2 && i < (lastIdx-i); i++ {  //for loop to analyze racecar
 		if str[i] != str[lastIdx-i] {
 			return false
 		}
